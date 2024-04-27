@@ -1,13 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import CustomerTable from './CustomerTable';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PlansTable from './PlansTable';
+import ChangePlanForm from './ChangePlanForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <h1>
+       Customers Table
+      </h1>
+   
+    <CustomerTable />
+
+    <br></br>
+    <h1>
+       Plans Table
+      </h1>
+   
+    <PlansTable />
+    <h1>
+      Change Plan
+      </h1>
+    <ChangePlanForm/>
   </React.StrictMode>
 );
 
